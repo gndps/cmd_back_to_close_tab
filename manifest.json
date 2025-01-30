@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Close Tab on Cmd+Back",
+    "version": "1.0",
+    "permissions": ["tabs", "scripting", "activeTab"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "cmd_back": {
+            "suggested_key": {
+                "default": "Ctrl+Left",
+                "mac": "Command+Left"
+            },
+            "description": "Go back or close tab if no history"
+        }
+    }
+}
